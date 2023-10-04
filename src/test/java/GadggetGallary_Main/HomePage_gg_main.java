@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage_gg_main {
 
-    WebDriver driver;
+   public WebDriver driver;
 
     public HomePage_gg_main(WebDriver driver) {
         this.driver = driver;
@@ -53,6 +53,23 @@ public class HomePage_gg_main {
     @FindBy(xpath = "//td[@class='product-name']")
     public WebElement verify_productname;
 
+    @FindBy(xpath = "//tr[@class='woocommerce-cart-form__cart-item cart_item']//td[@class='product-price']")
+    public WebElement verify_price;
+
+    @FindBy(xpath = "//tr[@class='woocommerce-cart-form__cart-item cart_item']//td[@class='product-subtotal']")
+    public WebElement verify_subTotalPrice;
+
+    @FindBy(xpath = "//tr[@class='woocommerce-cart-form__cart-item cart_item']//input[@class='input-text qty text']")
+    public WebElement verify_productQuantity;
+
+    @FindBy(xpath = "//li[@class='yamm-fw menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-5306 dropdown']")
+    public WebElement click_on_television;
+
+    @FindBy(linkText = "Smart TVs")
+    public WebElement over_on_smartTvs;
+
+    @FindBy(xpath = "(//img[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[2]")
+    public WebElement click_sec_pro;
 
 
 
