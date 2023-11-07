@@ -47,7 +47,7 @@ public class HomePage_gg_main {
     @FindBy(xpath = "//img[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail']")
     public  WebElement verify_add_to_cart_image;
 
-    @FindBy(xpath = "//a[@class='button wc-forward']")
+    @FindBy(linkText = "View cart")
     public WebElement viewcaet;
 
     @FindBy(xpath = "//td[@class='product-name']")
@@ -71,7 +71,23 @@ public class HomePage_gg_main {
     @FindBy(xpath = "(//img[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[2]")
     public WebElement click_sec_pro;
 
+    @FindBy(xpath = "//h1[@class='product_title entry-title']")
+    public WebElement pro_name;
 
+    @FindBy(xpath = "//button[@class='single_add_to_cart_button button alt']")
+    public WebElement add_cart;
 
+   @FindBy(xpath = "//td[@class='product-name']")
+   public WebElement productname2;
 
+   @FindBy(xpath = "(//input[@class='input-text'])[1]")
+   public WebElement cupponcode;
+
+   @FindBy(xpath = "(//button[@class='button'])[1]")
+   public WebElement applybtn;
+
+   @FindBy(xpath="//a[text()=' Proceed to checkout']")
+   public WebElement proceed_to_checkout;
+
+   
 }

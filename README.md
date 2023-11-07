@@ -1,2 +1,0 @@
-"# krupa" 
-# krupa
